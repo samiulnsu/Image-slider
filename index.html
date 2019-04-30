@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <script src="js/script.js"> </script>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <title>AutoimageSlider</title>
+ 
+ </head>
+
+<body>
+
+
+     <div class="slider">
+
+    <div id="img">
+      <img src="nsu5.jpg">
+    </div>
+
+  </div>
+    
+   
+
+
+
+<script>
+
+    var images = ['nsu1.jpg', 'nsu2.jpg', 'nsu3.jpg', 'nsu4.jpg', 'nsu5.jpg'];
+
+    var x = 0;
+
+    var imgs = document.getElementById('img');
+
+    setInterval(slider, 1500);
+
+
+    function slider() {
+
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+
+    }
+    </script> 
+
+
+  
+
+
+</body>
+
+</html>
